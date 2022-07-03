@@ -40,7 +40,9 @@ All the services of the project are now run as docker containers. The run script
  * Resources loaded from META-INF
  * Web Fragment (this includes a sample servlet configured via web fragment)
 
-# TODO
+# Export and Import Alfresco data
 
-  * Abstract assembly into a dependency so we don't have to ship the assembly in the archetype
-  * Functional/remote unit tests
+  * http://localhost:8080/alfresco/s/api/extract-data?nodeId=d1ca73fe-92ac-452e-92d8-32babdd39523
+    nodeId is the folder of which you want to export metadata of the child and sub tree. This is create report in the csv file in same folder 
+  * http://localhost:8080/alfresco/s/api/create-node?reportNodeId=6bf8dd8e-cbaf-4659-966b-8d46a55db15f&destNodeId=4f96bfec-1f65-4398-bae9-c10832a563cf
+    nodedestNodeId is the folder of which you want to import metadata and reportNodeId from where you can import metadata
