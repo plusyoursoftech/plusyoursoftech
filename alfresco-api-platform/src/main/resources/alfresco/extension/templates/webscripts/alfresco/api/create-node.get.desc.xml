@@ -1,0 +1,8 @@
+<webscript>
+    <shortname>API extract data</shortname>
+    <description>API extract Data for the for the properties</description>
+    <url>/api/create-node?reportNodeId={reportNodeId}&amp;destNodeId={destNodeId}</url>
+    <authentication>user</authentication>
+    <format default="html"></format>
+    <lifecycle>sample</lifecycle>    
+</webscript>
